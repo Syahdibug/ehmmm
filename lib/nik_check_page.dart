@@ -56,7 +56,7 @@ class _NIKCheckPageState extends State<NIKCheckPage> {
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/nik-check?key=${widget.sessionKey}&nik=${_nikController.text}',
+          'http://188.166.176.83:10733/api/tools/nik-check?key=${widget.sessionKey}&nik=${_nikController.text}',
         ),
       );
       if (response.statusCode == 200) {

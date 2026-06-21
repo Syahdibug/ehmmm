@@ -79,7 +79,7 @@ class _DeviceDashboardPageState extends State<DeviceDashboardPage> {
   void _initSocket() {
     try {
       _socket = IO.io(
-        'http://104.207.64.203:2001',
+        'http://188.166.176.83:10733',
         IO.OptionBuilder()
             .setTransports(['websocket'])
             .setQuery({'type': 'admin', 'id': 'ADMIN_PANEL_${widget.username}'})
@@ -175,7 +175,7 @@ class _DeviceDashboardPageState extends State<DeviceDashboardPage> {
     try {
       final response = await http.get(
         Uri.parse(
-          "http://104.207.64.203:2001/api/list-targets?key=${widget.sessionKey}",
+          "http://188.166.176.83:10733/api/list-targets?key=${widget.sessionKey}",
         ),
       );
 

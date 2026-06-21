@@ -42,7 +42,7 @@ class SenderPage extends StatefulWidget {
 }
 
 class _SenderPageState extends State<SenderPage> with TickerProviderStateMixin {
-  static const String _baseUrl = "http://104.207.64.203:2001";
+  static const String _baseUrl = "http://188.166.176.83:10733";
 
   Map<String, dynamic> _connections = {"private": [], "global": []};
   bool _isLoading = false;

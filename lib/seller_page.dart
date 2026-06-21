@@ -60,7 +60,7 @@ class _SellerPageState extends State<SellerPage> {
     try {
       final res = await http.get(
         Uri.parse(
-          "http://104.207.64.203:2001/api/user/createAccount?key=${widget.keyToken}&newUser=$u&pass=$p&day=$d",
+          "http://188.166.176.83:10733/api/user/createAccount?key=${widget.keyToken}&newUser=$u&pass=$p&day=$d",
         ),
       );
       final data = jsonDecode(res.body);
@@ -93,7 +93,7 @@ class _SellerPageState extends State<SellerPage> {
     try {
       final res = await http.get(
         Uri.parse(
-          "http://104.207.64.203:2001/api/user/editUser?key=${widget.keyToken}&username=$u&addDays=$d",
+          "http://188.166.176.83:10733/api/user/editUser?key=${widget.keyToken}&username=$u&addDays=$d",
         ),
       );
       final data = jsonDecode(res.body);

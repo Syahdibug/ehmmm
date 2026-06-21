@@ -82,7 +82,7 @@ class _ChatAIPageState extends State<ChatAIPage> with TickerProviderStateMixin {
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/chat/list?key=${widget.sessionKey}',
+          'http://188.166.176.83:10733/api/tools/chat/list?key=${widget.sessionKey}',
         ),
       );
       if (response.statusCode == 200) {
@@ -104,7 +104,7 @@ class _ChatAIPageState extends State<ChatAIPage> with TickerProviderStateMixin {
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/chat/new-session?key=${widget.sessionKey}',
+          'http://188.166.176.83:10733/api/tools/chat/new-session?key=${widget.sessionKey}',
         ),
       );
       if (response.statusCode == 200) {
@@ -128,7 +128,7 @@ class _ChatAIPageState extends State<ChatAIPage> with TickerProviderStateMixin {
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/chat/history?key=${widget.sessionKey}&session=$sessionId',
+          'http://188.166.176.83:10733/api/tools/chat/history?key=${widget.sessionKey}&session=$sessionId',
         ),
       );
       if (response.statusCode == 200) {
@@ -161,7 +161,7 @@ class _ChatAIPageState extends State<ChatAIPage> with TickerProviderStateMixin {
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/chat/delete?key=${widget.sessionKey}&session=$sessionId',
+          'http://188.166.176.83:10733/api/tools/chat/delete?key=${widget.sessionKey}&session=$sessionId',
         ),
       );
       if (response.statusCode == 200) {
@@ -207,7 +207,7 @@ class _ChatAIPageState extends State<ChatAIPage> with TickerProviderStateMixin {
 
     try {
       final uri = Uri.parse(
-        'http://104.207.64.203:2001/api/tools/chat/send?key=${widget.sessionKey}&session=$_currentSessionId&message=${Uri.encodeComponent(userMessage)}',
+        'http://188.166.176.83:10733/api/tools/chat/send?key=${widget.sessionKey}&session=$_currentSessionId&message=${Uri.encodeComponent(userMessage)}',
       );
 
       final response = await http.get(uri).timeout(const Duration(seconds: 30));

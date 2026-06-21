@@ -10,7 +10,7 @@ import 'dart:math' as math;
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'dart:async';
 
-const String baseUrl = "http://104.207.64.203:2001";
+const String baseUrl = "http://188.166.176.83:10733";
 
 // ── CHARACTER IMAGES ────────────────────────────────────────────────
 const CHAR_IMAGES = [

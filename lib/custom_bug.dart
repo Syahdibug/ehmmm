@@ -30,7 +30,7 @@ class _CustomAttackPageState extends State<CustomAttackPage>
   final targetController = TextEditingController();
   final qtyController = TextEditingController(text: "5");
   final delayController = TextEditingController(text: "100");
-  static const String baseUrl = "http://104.207.64.203:2001";
+  static const String baseUrl = "http://188.166.176.83:10733";
 
   // ── Color Scheme (identik dashboard _C) ──
   static const _bg = Color(0xFF0c0d15);

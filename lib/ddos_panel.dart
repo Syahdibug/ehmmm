@@ -53,7 +53,7 @@ class _AttackPanelState extends State<AttackPanel>
   VideoPlayerController? _videoController;
 
   // Constants
-  static const String baseUrl = "http://104.207.64.203:2001/api/vps";
+  static const String baseUrl = "http://188.166.176.83:10733/api/vps";
 
   // State variables
   late AnimationController _glowController;

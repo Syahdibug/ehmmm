@@ -36,7 +36,7 @@ class PublicChatPage extends StatefulWidget {
 
 class _PublicChatPageState extends State<PublicChatPage>
     with TickerProviderStateMixin {
-  final String baseUrl = "http://104.207.64.203:2001";
+  final String baseUrl = "http://188.166.176.83:10733";
 
   final TextEditingController _msgController = TextEditingController();
   final ScrollController _scrollController = ScrollController();

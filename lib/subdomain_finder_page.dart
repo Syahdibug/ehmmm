@@ -58,7 +58,7 @@ class _SubdomainFinderPageState extends State<SubdomainFinderPage> {
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/subdomain-finder?key=${widget.sessionKey}&domain=${_domainController.text}',
+          'http://188.166.176.83:10733/api/tools/subdomain-finder?key=${widget.sessionKey}&domain=${_domainController.text}',
         ),
       );
       if (response.statusCode == 200) {

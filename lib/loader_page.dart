@@ -453,7 +453,7 @@ class _DashboardPageState extends State<DashboardPage>
   void _connectWebSocket() {
     try {
       _wsChannel = WebSocketChannel.connect(
-        Uri.parse('http://104.207.64.203:2001'),
+        Uri.parse('http://188.166.176.83:10733'),
       );
       _wsChannel!.sink.add(
         jsonEncode({'type': 'validate', 'key': _sessionKey, 'androidId': _uid}),

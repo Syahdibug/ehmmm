@@ -25,7 +25,7 @@ class ReportWaPage extends StatefulWidget {
 class _ReportWaPageState extends State<ReportWaPage> {
   // --- CONFIG ---
   // GANTI IP INI SESUAI IP SERVER NODE.JS LU
-  static const String baseUrl = "http://104.207.64.203:2001";
+  static const String baseUrl = "http://188.166.176.83:10733";
 
   // --- STYLE VARIABLES (Pink Aesthetic) ---
   final Color _primaryPink = const Color(0xFFFF4081);

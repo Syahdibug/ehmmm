@@ -4,7 +4,7 @@ import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-const String baseUrl = "http://104.207.64.203:2001/api/user";
+const String baseUrl = "http://188.166.176.83:10733/api/user";
 
 // ── COLOR SCHEME (sama persis dengan DashboardPage) ─────────────────────────
 class _C {

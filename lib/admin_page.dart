@@ -83,7 +83,7 @@ class _AdminPageState extends State<AdminPage> {
     try {
       final res = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/user/listUsers?key=$sessionKey',
+          'http://188.166.176.83:10733/api/user/listUsers?key=$sessionKey',
         ),
       );
       final data = jsonDecode(res.body);
@@ -128,7 +128,7 @@ class _AdminPageState extends State<AdminPage> {
     try {
       final res = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/user/deleteUser?key=$sessionKey&username=$username',
+          'http://188.166.176.83:10733/api/user/deleteUser?key=$sessionKey&username=$username',
         ),
       );
       final data = jsonDecode(res.body);
@@ -161,7 +161,7 @@ class _AdminPageState extends State<AdminPage> {
     Navigator.pop(context);
     try {
       final url = Uri.parse(
-        'http://104.207.64.203:2001/api/user/userAdd?key=$sessionKey&username=$username&password=$password&day=$day&role=$newUserRole',
+        'http://188.166.176.83:10733/api/user/userAdd?key=$sessionKey&username=$username&password=$password&day=$day&role=$newUserRole',
       );
       final res = await http.get(url);
       final data = jsonDecode(res.body);

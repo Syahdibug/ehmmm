@@ -32,7 +32,7 @@ class ChatPage extends StatefulWidget {
 }
 
 class _ChatPageState extends State<ChatPage> with TickerProviderStateMixin {
-  final String baseUrl = 'http://104.207.64.203:2001';
+  final String baseUrl = 'http://188.166.176.83:10733';
 
   final TextEditingController _msgController = TextEditingController();
   final TextEditingController _searchController = TextEditingController();

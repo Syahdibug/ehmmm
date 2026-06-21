@@ -215,7 +215,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/telegram/sessions?key=${widget.sessionKey}',
+          'http://188.166.176.83:10733/api/tools/telegram/sessions?key=${widget.sessionKey}',
         ),
       );
 
@@ -271,7 +271,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
           : _currentLoginPhone;
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/telegram/login?key=${widget.sessionKey}&phone=$phone',
+          'http://188.166.176.83:10733/api/tools/telegram/login?key=${widget.sessionKey}&phone=$phone',
         ),
       );
 
@@ -326,7 +326,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/telegram/auth?key=${widget.sessionKey}&loginId=$_currentLoginId&input=${_authController.text.trim()}',
+          'http://188.166.176.83:10733/api/tools/telegram/auth?key=${widget.sessionKey}&loginId=$_currentLoginId&input=${_authController.text.trim()}',
         ),
       );
 
@@ -375,7 +375,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
       try {
         final response = await http.get(
           Uri.parse(
-            'http://104.207.64.203:2001/api/tools/telegram/status?key=${widget.sessionKey}&loginId=$_currentLoginId',
+            'http://188.166.176.83:10733/api/tools/telegram/status?key=${widget.sessionKey}&loginId=$_currentLoginId',
           ),
         );
         final data = jsonDecode(response.body);
@@ -399,7 +399,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
     try {
       final response = await http.post(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/telegram/verify-session-password',
+          'http://188.166.176.83:10733/api/tools/telegram/verify-session-password',
         ),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
@@ -469,7 +469,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/telegram/refresh-sessions?key=${widget.sessionKey}',
+          'http://188.166.176.83:10733/api/tools/telegram/refresh-sessions?key=${widget.sessionKey}',
         ),
       );
       final data = jsonDecode(response.body);
@@ -496,7 +496,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
     try {
       final response = await http.get(
         Uri.parse(
-          'http://104.207.64.203:2001/api/tools/telegram/remove-ses?key=${widget.sessionKey}&phone=$phone',
+          'http://188.166.176.83:10733/api/tools/telegram/remove-ses?key=${widget.sessionKey}&phone=$phone',
         ),
       );
       final data = jsonDecode(response.body);
@@ -544,7 +544,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
 
     try {
       final response = await http.post(
-        Uri.parse('http://104.207.64.203:2001/api/tools/telegram/spam-report'),
+        Uri.parse('http://188.166.176.83:10733/api/tools/telegram/spam-report'),
         headers: {'Content-Type': 'application/json'},
         body: jsonEncode({
           'key': widget.sessionKey,
@@ -581,7 +581,7 @@ class _TelegramSpamPageState extends State<TelegramSpamPage>
       try {
         final response = await http.get(
           Uri.parse(
-            'http://104.207.64.203:2001/api/tools/telegram/report-status?key=${widget.sessionKey}&reportId=$_currentReportId',
+            'http://188.166.176.83:10733/api/tools/telegram/report-status?key=${widget.sessionKey}&reportId=$_currentReportId',
           ),
         );
         final data = jsonDecode(response.body);
